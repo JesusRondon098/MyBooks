@@ -1,0 +1,34 @@
+main{
+    background-image: url(../../../assets/Fondo.jpg);
+    background-position: 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 72.5vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+div{
+    border: 3px solid rgba(0, 128, 0, 0.521);
+    background-color: green;
+    border-radius: 10px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+    text-align: center;
+}
+.Enviar{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 80%;
+}

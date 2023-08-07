@@ -1,0 +1,27 @@
+
+main{
+    background-color: brown;
+    color: aliceblue;
+    width: 100vw;
+    height: 10vh;
+    font-size: 30px;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row,
+}
+    .MyBooks{
+       padding: 10px; 
+    }
+    .Vacio{
+        padding: 10px;
+        width: 30%; 
+    }
+    .Home{
+        padding: 10px;
+        color: white;
+    }
+    .Registro{
+        padding: 10px;
+        color: white;
+    }

@@ -1,0 +1,23 @@
+div{
+    height: 72.5vh;
+    background-color: blue;
+    background-image: url(../../../assets/Fondo.jpg);
+    background-position: 0%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    color: goldenrod;
+}
+.imagen{
+    background-image: url(../../../assets/Icono.png);
+    background-position: 0%;
+    background-size:auto;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 40%;
+}
