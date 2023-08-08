@@ -1,0 +1,30 @@
+<main>
+    <div class="div">
+        <div class="Foto">
+            <div class="FotoContenido">
+                <div class="Imagen"><img src="{{miUser.photo}}" alt=""></div>
+                <h3 class="Texto" id="texto1">{{miUser.nombreCompleto()}}</h3>
+            </div>
+            <div class="FormularioFoto">
+                <form class="Primero">
+                    <label>Nombre:</label>
+                    <input type="text" [value]="miUser.name">
+                    <label>Apellido:</label>
+                    <input type="text" [value]="miUser.last_name">
+                    <label>Correo:</label>
+                    <input type="email" [value]="miUser.email">
+                </form>
+            </div>
+        </div>
+        <div class="Formulario">
+            <h1>Editar Datos</h1>
+            <form class="Segunda">
+                <input placeholder="Nombre" type="text" #name>
+                <input placeholder="Apellido" type="text" #apellido>
+                <input placeholder="Correo" type="email" #correo>
+                <input placeholder="URL" type="text" #url>
+                <button (click)=cambiarDatos(name,apellido,correo,url)>Modificar</button>
+            </form>
+        </div>
+    </div>
+</main>

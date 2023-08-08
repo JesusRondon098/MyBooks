@@ -1,0 +1,77 @@
+main{
+    background-image: url(../../../assets/Fondo.jpg);
+    background-position: 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 72.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 80%;
+    width: 70%;
+    gap: 10px;
+}
+.Foto{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    background-color: yellowgreen;
+    padding: 10px;
+    border-radius: 10px;
+}
+.FotoContenido{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 5px;
+}
+.Imagen img{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+}
+.Texto{
+    text-align: center;
+    color: white;
+}
+.FormularioFoto{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.Primero{
+    display: flex;
+    flex-direction: column;
+}
+.Formulario{
+    width: 65%;
+    background-color: yellowgreen;
+    border-radius: 10px;
+}
+h1{
+    height: 10%;
+    text-align: center;
+    padding: 50px;
+    text-decoration:underline;
+}
+.Segunda{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 11px;
+}
+input{
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
