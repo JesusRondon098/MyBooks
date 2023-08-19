@@ -1,0 +1,119 @@
+main{
+    background-image: url(../../../assets/Fondo.jpg);
+    background-position: 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}
+.Contenido1{
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+.card{
+    
+    width: 300px;
+    height: 50%;
+    display: flex;
+
+    flex-direction: column;
+    background-color: gray;
+    border-radius: 10px;
+}
+.IF{
+    border: 2px solid blue;
+    background-color: rgba(0, 0, 255, 0.61);
+    border-radius: 5px;
+    height: 10%;
+    width: auto;
+    text-align: left;
+    font-size: 100px;
+}
+.Contenido{
+    width: 100%;
+}
+
+.photo{
+    
+    width: 300px;
+    height: 50%;
+    background-position: 0%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#titulo{
+    text-align: center;
+    font-size: 30px;
+    border-top: 2px solid black;
+    width: 100%;
+}
+p{
+    font-size: 20px;
+    text-align: left;
+    border-top: 2px solid black;
+}
+#type{
+    font-size: 30px;
+    text-align: left;
+    border-top: 2px solid black;
+    padding: 5px;
+}
+#autor{
+    font-size: 30px;
+    text-align: left;
+    padding: 5px;
+}
+#precio{
+    font-size: 30px;
+    text-align: left;
+    padding: 5px;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+button{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 50%;
+    height: 20px;
+}
+.azul{
+    background-color: blue;
+}
+.verde{
+    background-color: green;
+}
+.Formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 3px solid pink;
+    width: 300px;
+    height: 500px;
+    background-color: gray;
+}
+h1{
+    text-align: center;
+}
+input{
+    width: 50%;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}

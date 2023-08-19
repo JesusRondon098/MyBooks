@@ -8,6 +8,7 @@ import { FooterComponent } from './component/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { FormRegisteComponent } from './component/form-registe/form-registe.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { BooksComponent } from './pages/books/books.component';
 
 
 
@@ -19,6 +20,7 @@ import { RegisterComponent } from './pages/register/register.component';
     HomeComponent,
     FormRegisteComponent,
     RegisterComponent,
+    BooksComponent,
   ],
   imports: [
     BrowserModule,

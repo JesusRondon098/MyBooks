@@ -1,0 +1,37 @@
+<main>
+
+   <div class="Formulario">
+    <h1>Ingrese un nuevo libro</h1>
+    <label>Titulo:</label>
+    <input type="text" #titulo>
+    <label>Type</label>
+    <input type="text" #type>
+    <label>Autor:</label>
+    <input type="text" #autor>
+    <label>Precio:</label>
+    <input type="text" #precio>
+    <label>Foto:</label>
+    <input type="text" #foto>
+    <label>Codigo Libro:</label>
+    <input type="text" #codigo>
+    <label>Codigo User:</label>
+    <input type="text" #user><br>
+    <button on-click="add(codigo.value, user.value, titulo.value, type.value, autor.value, precio.value, foto.value)">Enviar</button>
+  </div>
+
+  <div class="Contenido1">
+    <div class="IF" *ngIf="books.length === 0">
+      No hay libros
+    </div>
+    <div class="card" *ngFor="let book of books; let impar= odd; let par= even;">
+          <img class="photo" src="{{book.photo}}">
+          <h3 id="titulo">{{book.title}}</h3>
+          <p>Tapa Blanca</p>
+          <h2 id="type">Genero: {{book.type}}</h2>
+          <h4 id="autor">Autor: {{book.author}}</h4>
+          <h2 id="precio">Precio: {{book.price}} €</h2>
+          <button [ngClass]="{azul:par, verde:impar}">Comprar</button>
+    </div>
+  </div>
+</main>
+
