@@ -8,7 +8,11 @@ import { FooterComponent } from './component/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { FormRegisteComponent } from './component/form-registe/form-registe.component';
 import { RegisterComponent } from './pages/register/register.component';
+<<<<<<< HEAD
 import { ProfileComponent } from './pages/profile/profile.component';
+=======
+import { BooksComponent } from './pages/books/books.component';
+>>>>>>> Dia3
 
 
 
@@ -20,7 +24,11 @@ import { ProfileComponent } from './pages/profile/profile.component';
     HomeComponent,
     FormRegisteComponent,
     RegisterComponent,
+<<<<<<< HEAD
     ProfileComponent,
+=======
+    BooksComponent,
+>>>>>>> Dia3
   ],
   imports: [
     BrowserModule,
