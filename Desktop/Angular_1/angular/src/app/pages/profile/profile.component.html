@@ -1,0 +1,24 @@
+<main>
+    <div>
+       <form>
+           <img src="{{miUser.photo}}">
+           <h1>{{miUser.boton()}}</h1>
+           <label>Nombre:</label>
+           <input type="text" [value]="miUser.name">
+           <label>Apellido:</label>
+           <input type="text" [value]="miUser.last_name">
+           <label>Correo:</label>
+           <input type="text" [value]="miUser.email">
+       </form>
+    </div>
+    <div>
+       <form>
+           <h1>Ingrese tus datos</h1>
+           <input type="text" placeholder="Nombre" #nombre>
+           <input type="text" placeholder="Apellido" #apellido>
+           <input type="text" placeholder="Correo" #correo>
+           <input type="text" placeholder="Imagen" #imagen>
+           <input type="button" value="Enviar" (click)= cambiar(nombre,apellido,correo,imagen) >
+       </form>
+    </div>
+</main>

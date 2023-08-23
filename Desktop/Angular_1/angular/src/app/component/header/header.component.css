@@ -1,0 +1,36 @@
+/******** Main *******/
+main{
+    height: 10vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    background-color: green;
+    color: white;
+}
+/******** Div *******/
+div{
+    height: 100%;
+
+    text-align: center;
+}
+/******** Clases *********/
+.Espacio{
+    width: 30%;
+}
+.Logo{
+    font-size:x-large
+}
+.Home{
+    padding: 20px;
+}
+.Registrar{
+    padding: 20px;
+}
+/**** a ****/
+a{
+    color: white;
+    width: 10%;
+}
