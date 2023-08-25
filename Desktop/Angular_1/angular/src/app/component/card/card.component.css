@@ -12,63 +12,7 @@ main{
     background-size: cover;
     gap: 5px;
 }
-/***** form *****/
-form{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    gap: 5px;
-}
-/***** Formulario *****/
-.Formulario{
-    border: 2px solid blue;
-    width: 40%;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../../../assets/ImagenesDia1/FondoFormulario.png);
-    background-size: cover;
-    background-position: 0%;
-}
-/****** h1 ******/
-h1{
-    text-align: center;
-}
-/***** class *****/
-.Contenido1{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-.IF{
-    text-align: center;
-    font-size: 100px;
-    padding: 90px;
-}
-.card{
-    border: 1px solid black;
-    border-radius: 2px;
-    height: 100%;
-    background-image: url(../../../assets/ImagenesDia1/Fondocard.png);
-    background-position: 0%;
-    background-size: cover;
-}
-.photo{
-    height: 80vh;
-    width: 30vw;
-}
-/*****  ******/
-.azul{
-    background-color: blue;
-}
-.verde{
-    background-color: green;
-}
+
 /***** Interior Card ******/
 #titulo{
     text-decoration: underline;
@@ -103,13 +47,26 @@ button{
     border-radius: 3px;
     height: 30px;
     width: 100px;
-    color: white;
-    font-size:20px ;
 }
-/**** Interior Formulario *****/
-.botonFormulario{
-    color: black;
-    width: 100%;
-    height: 20px;
-    font-size: small;
+.photo{
+    height: 80vh;
+    width: 30vw;
+} 
+.card{
+    background-image: url(../../../assets/ImagenesDia1/Fondocard.png);
+    background-position: 0%;
+    background-size: cover;
+}
+.azul{
+    background-color: blue;
+}
+.verde{
+    background-color: green;
+}
+.boton{
+    gap: 5px;
+}
+.borrar{
+    height: 15px;
+    width: 12px;
 }

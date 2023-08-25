@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 import { Book } from 'src/app/models/book';
 
 @Component({
@@ -10,7 +10,6 @@ export class BooksComponent {
   public books:Book[]
   constructor(){
     this.books=[
-      // new Book(123,12,"El cuervo","Dura","Edgar Allan Poe",30, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh0eHefIwgHZt0U-lCKSf46AxwHetT0ICZTHMmXYKfK9Gwiavx4HNyD4ey0nwCjUqKD7M"),
       
     ]
   }
@@ -18,5 +17,8 @@ export class BooksComponent {
     let libro = new Book(id_book,id_user,title,type,author,price,photo)
     this.books.push(libro)
     console.log(this.books)
+  }
+  borrar(book:Book){
+    this.books = this.books.filter(prueba => prueba.id_book != book.id_book);
   }
 }

@@ -14,20 +14,17 @@
         </form>
     </div>
 
+
     <div class="Contenido1">
         <div class="IF" *ngIf="books.length === 0">
           No hay libros
         </div>
-        <div class="card" *ngFor="let book of books; let impar= odd; let par= even;">
-              <img class="photo" src="{{book.photo}}">
-              <h3 id="titulo">{{book.title}}</h3>
-              <p>Tapa: {{book.type}}</p>
-              <h2 id="type">Codigo: {{book.id_book}}</h2>
-              <h4 id="autor">Autor: {{book.author}}</h4>
-              <h2 id="precio">Precio: {{book.price}} €</h2>
-              <div class="boton">
-              <button [ngClass]="{azul:par, verde:impar}">Comprar</button>
-              </div>
+
+        <div *ngFor = "let libro of books">
+       
+        <app-card  [libro] = "libro" let even = even [even]="even" (eliminar)="borrar($event)"></app-card>
+
         </div>
-    </div>
-</main>
+     
+    </div> 
+</main> 

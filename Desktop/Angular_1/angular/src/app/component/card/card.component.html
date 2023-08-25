@@ -1,34 +1,18 @@
-<main>
-    <div class="Formulario">
-        <form>
-            <h1>Ingrese un libro</h1>
-            <input type="text" placeholder="Titulo" #title>
-            <input type="text" placeholder="Tapa blanda o dura" #type>
-            <input type="text" placeholder="Autor" #author>
-            <input type="number" placeholder="Precio" #price>
-            <input type="text" placeholder="Foto" #photo>
-            <input type="number" placeholder="Usuario" #id_user>
-            <input type="number" placeholder="Codigo del libro" #id_book>
-            <input type="reset" value="Limpiar">
-            <button class="botonFormulario" type="button" on-click ="nuevoLibro(id_book.value,id_user.value,title.value,type.value, author.value ,price.value , photo.value)">Enviar</button>
-        </form>
-    </div>
-
-    <div class="Contenido1">
-        <div class="IF" *ngIf="books.length === 0">
-          No hay libros
-        </div>
-        <div class="card" *ngFor="let book of books; let impar= odd; let par= even;">
-              <img class="photo" src="{{book.photo}}">
-              <h3 id="titulo">{{book.title}}</h3>
-              <p>Tapa: {{book.type}}</p>
-              <h2 id="type">Codigo: {{book.id_book}}</h2>
-              <h4 id="autor">Autor: {{book.author}}</h4>
-              <h2 id="precio">Precio: {{book.price}} €</h2>
+<main>   
+    
+        <div class="Contenido1">
+             
+            <div class="card">
+              <img class="photo" src="{{libro.photo}}">
+              <div id="titulo">{{libro.title}}</div>
+              <h2 id="type">Codigo: {{libro | pipe}}</h2>
+              <h4 id="autor">Autor: {{libro.author}}</h4>
+              <h2 id="precio">Precio: {{libro.price}} €</h2>
               <div class="boton">
-              <button [ngClass]="{azul:par, verde:impar}">Comprar</button>
-              <button type="button" aria-label="Close" [boton]="cerrar">x</button>
-              </div>
+                <button >Comprar</button>
+                </div>
+                <button class="borrar" on-click ="borrar(libro)">X</button>  
+            </div>
         </div>
-    </div>
+        
 </main>

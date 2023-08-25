@@ -11,6 +11,8 @@ import { RegisterComponent } from './pages/register/register.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { BooksComponent } from './pages/books/books.component';
 import { CardComponent } from './component/card/card.component';
+import { FormsModule } from '@angular/forms';
+import { PipePipe } from './pipes/pipe.pipe';
 
 @NgModule({
   declarations: [
@@ -22,11 +24,13 @@ import { CardComponent } from './component/card/card.component';
     RegisterComponent,
     ProfileComponent,
     BooksComponent,
-    CardComponent
+    CardComponent,
+    PipePipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
